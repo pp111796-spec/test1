@@ -35,7 +35,6 @@ export async function analyzeDecisionWithAI(dilemma: string): Promise<DecisionRe
       {
         type: 'text',
         text: SYSTEM_PROMPT,
-        // @ts-expect-error cache_control is supported but not yet in all type defs
         cache_control: { type: 'ephemeral' },
       },
     ],
