@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm list *)",
+      "PowerShell(Get-Command node -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command npm -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command vercel -ErrorAction SilentlyContinue)",
+      "Read(//c/Users/user/AppData/Roaming/**)",
+      "PowerShell(& \"C:\\\\Program Files\\\\nodejs\\\\npm.cmd\" install -g vercel)",
+      "PowerShell($env:PATH = \"C:\\\\Program Files\\\\nodejs;\" + $env:PATH; & \"C:\\\\Program Files\\\\nodejs\\\\npm.cmd\" install -g vercel 2>&1 | tail -5)",
+      "PowerShell($env:PATH = \"C:\\\\Program Files\\\\nodejs;\" + $env:PATH; & \"C:\\\\Program Files\\\\nodejs\\\\npm.cmd\" install -g vercel 2>&1 | Select-Object -Last 10)",
+      "PowerShell($env:PATH = \"C:\\\\Program Files\\\\nodejs;\" + $env:PATH; vercel --version 2>&1)",
+      "PowerShell($env:PATH = \"C:\\\\Program Files\\\\nodejs;C:\\\\Users\\\\user\\\\AppData\\\\Roaming\\\\npm;\" + $env:PATH; vercel --version 2>&1)",
+      "PowerShell(Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force; $env:PATH = \"C:\\\\Program Files\\\\nodejs;C:\\\\Users\\\\user\\\\AppData\\\\Roaming\\\\npm;\" + $env:PATH; vercel --version 2>&1)",
+      "Bash(git -C \"c:/Users/user/OneDrive - 건양대학교/바탕 화면/바이브 코딩/\" remote -v)"
+    ]
+  }
+}
