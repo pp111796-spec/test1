@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($env:PATH)",
+      "Read(//c/Program Files/**)",
+      "PowerShell(winget --version)",
+      "PowerShell(winget install Git.Git --silent --accept-package-agreements --accept-source-agreements)",
+      "PowerShell(winget install OpenJS.NodeJS.LTS --silent --accept-package-agreements --accept-source-agreements)"
+    ]
+  }
+}
